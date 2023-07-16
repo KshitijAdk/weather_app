@@ -1,0 +1,116 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+.container {
+    background: #036644;
+    color: white;
+    padding: 2rem;
+    width: 40%;
+    margin: 4rem auto;
+    border-radius: 15px;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+input {
+    border: none;
+    background: #fff;
+    outline: none;
+    color: black;
+    padding: 0.8rem 2.9rem;
+    border-radius: 20px;
+}
+
+input::placeholder {
+    color: black;
+}
+
+.search {
+    position: relative;
+    left: 130px;
+}
+
+.search i {
+    position: absolute;
+    left: 20px;
+    top: 15px;
+    font-size: 20px;
+    color: black;
+}
+
+.weatherBody {
+    text-align: center;
+    margin-top: 3rem;
+}
+
+.weather_datetime {
+    margin-bottom: 2rem;
+    font-size: 14px;
+}
+
+.weatherForecast {
+    font-size: 25px;
+    display: inline-block;
+    padding: 0.5rem 1rem;
+}
+
+.weatherIcon img {
+    width: 100px;
+}
+
+.temperature {
+    font-size: 3rem;
+}
+
+.weatherInfo {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 1rem;
+    margin-top: 3rem;
+    
+}
+
+.weatherCard {
+    display: flex;
+    align-items: center;
+    background: #059b67;
+    padding: 1rem;
+    border-radius: 10px;
+}
+
+.weatherCard i {
+    font-size: 1.5rem;
+    margin-right: 1rem;
+}
+
+.weatherCard p {
+    font-size: 14px;
+}
+.weatherCard2 {
+    margin: 0.8rem;
+    display: flex;
+    align-items: center;
+    background: #059b67;
+    padding: 1rem;
+    border-radius: 10px;
+}
+
+.weatherCard2 i {
+    font-size: 1.5rem;
+    margin-right: 1rem;
+}
+
+.weatherCard2 p {
+    font-size: 14px;
+}
