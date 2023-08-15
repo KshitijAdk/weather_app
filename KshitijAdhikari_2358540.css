@@ -8,13 +8,21 @@
     font-family: 'Poppins', sans-serif;
 }
 
+body{
+    background-image: url(./pexels-johannes-plenio-2259232.jpg);
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* Do not repeat the image */
+    background-size: cover;
+}
 .container {
-    background: #036644;
+    background: #077c53;
     color: white;
     padding: 2rem;
     width: 40%;
     margin: 4rem auto;
+    box-shadow: 10px 10px 10px 10px rgb(0,0,0);
     border-radius: 15px;
+
 }
 
 .header {
@@ -87,6 +95,13 @@ input::placeholder {
     background: #059b67;
     padding: 1rem;
     border-radius: 10px;
+    transition: .3s ease-in-out;
+}
+.weatherCard:hover{
+    background-color: #55cba2;
+}
+.weatherCard2:hover{
+    background-color: #55cba2;
 }
 
 .weatherCard i {
@@ -100,10 +115,12 @@ input::placeholder {
 .weatherCard2 {
     margin: 0.8rem;
     display: flex;
+    justify-content: center;
     align-items: center;
     background: #059b67;
     padding: 1rem;
     border-radius: 10px;
+    transition: .3s ease-in-out;
 }
 
 .weatherCard2 i {

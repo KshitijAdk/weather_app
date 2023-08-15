@@ -37,7 +37,7 @@ function convertCountryCode(country) {
   return regionNames.of(country);
 } 
 
-function getWeather() {
+function getWeather() { 
   const API_KEY = 'd1a02306b7e6b7ea4e5a0c429ee4f9b5';
   fetch(`https://api.openweathermap.org/data/2.5/weather?q=${currCity}&appid=${API_KEY}&units=${units}`)
     .then(response => {
@@ -52,7 +52,7 @@ function getWeather() {
       datetime.innerHTML = convertTimeStamp(data.dt, data.timezone);
       weatherForecast.innerHTML = `<p>${data.weather[0].main}`;
       weatherTemperature.innerHTML = `${data.main.temp.toFixed()}&#176`;
-      weatherIcon.innerHTML = `<img src="http://openweathermap.org/img/wn/${data.weather[0].icon}@4x.png" />`;
+      weatherIcon.innerHTML = `<img src="http://openweathermap.org/img/wn/${data.weather[0].icon}@4x.png"  />`;
       humidity.innerHTML = `${data.main.humidity}%`;
       wind.innerHTML = `${data.wind.speed} ${units === "imperial" ? "mph" : "m/s"}`;
       pressure.innerHTML = `${data.main.pressure} hPa`;
